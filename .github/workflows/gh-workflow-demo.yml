@@ -16,3 +16,17 @@ jobs:
         run: echo ${{ github.event.inputs.name }}
       - name: Use own Action
         uses: RickardHF/javascript-action@main
+  staging:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo ${{ github.event.inputs.name }}
+      - name: Use own Action
+        uses: RickardHF/javascript-action@main
+  prod:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo ${{ github.event.inputs.name }}
+      - name: Use own Action
+        uses: RickardHF/javascript-action@main
